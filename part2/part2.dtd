@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT mywebskills (frontend,backend)>
+<!ELEMENT frontend (html|css|skill)*>
+<!ELEMENT html (skill+)>
+<!ELEMENT css (skill+)>
+<!ELEMENT backend (skill+)>
+<!ELEMENT skill EMPTY>
+<!ATTLIST skill title CDATA #REQUIRED>
+<!ATTLIST skill level (basic|okay|good) #REQUIRED>
